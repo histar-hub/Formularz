@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Formularz</title>
+<style>
+	.bg-firebrick {
+		background-color:firebrick;
+	}
+	.bold {
+		font-weight:bold;	
+	}
+</style>
+</head>
+<body>
+    <div class="bg-firebrick bold">
+        <legend>Moje dane</legend>
+    </div>
+    <div style="background-color:rgb(107, 91, 232);">
+        <form action="imtex.html" method="post">
+            Podaj imię<input type="text" name="imię" value="" placeholder="Wpisz tutaj swoje imię"><br>
+            Klasa<input tpye="text" name="klasa" value="" placeholder="Podaj z której klasy jesteś"><br>
+            Wiek<input type="number" name="imię" value="" min="1" max="10" placeholder="1-100" size="30"><br>
+            <p>Zgoda><input type="checkbox">Zaznacz jeżeli wyrażasz zgodę</p>
+            <p>Zainteresowania:</p>
+            <select multiple>
+                <option selected="selected">Bieganie</option>
+                <option>Szermierka</option>
+                <option>Piłka nożna</option>
+            </select>
+                <fieldset class="bg-firebrick">
+                    <legend class="bold">Informacje dodatkowe</legend>
+                    <p>Wybierz ulubione danie:</p>
+                    <input type="radio" name="dania" checked>Pizza<br>
+                    <input type="radio" name="dania">Kotlet<br>
+                    <input type="radio" name="dania">Kanapka<br>
+                    <input type="radio" name="dania">Inne<br>
+                    <input type="submit" value="Zatwierdź"><br>
+                    <input type="reset" value="Reset">
+                </fieldset>
+        </form>
+    </div>
+</body>
+</html>
