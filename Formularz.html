@@ -16,11 +16,13 @@
 </style>
 </head>
 <body>
-    <div class="bg-firebrick bold">
-        <legend>Moje dane</legend>
-    </div>
+   
     <div class="bg-violet">
         <form action="imtex.html" method="post">
+		<fieldset>
+			 <div class="bg-firebrick bold">
+        <legend>Moje dane</legend>
+    </div>
             Podaj imię<input type="text" name="imię" value="" placeholder="Wpisz tutaj swoje imię"><br>
             Klasa<input tpye="text" name="klasa" value="" placeholder="Podaj z której klasy jesteś"><br>
             Wiek<input type="number" name="imię" value="" min="1" max="10" placeholder="1-100" size="30"><br>
@@ -31,6 +33,7 @@
                 <option>Szermierka</option>
                 <option>Piłka nożna</option>
             </select>
+		</fieldset>
                 <fieldset class="bg-firebrick">
                     <legend class="bold">Informacje dodatkowe</legend>
                     <p>Wybierz ulubione danie:</p>
